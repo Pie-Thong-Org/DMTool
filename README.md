@@ -1,4 +1,4 @@
-# DMTool
+# DM Tool
 
 - Current goals for the DM Tool:
   - Maintain up-to-date information for the material within the DnD multiverse.
