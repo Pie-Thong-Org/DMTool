@@ -19,8 +19,6 @@ homepageurl = "http://dnd5e.wikidot.com"
 dndhomepage = requests.get("http://dnd5e.wikidot.com")
 soup = BSoup(dndhomepage.text, "lxml")
 
-file = open("savefile.json", "w")
-
 links = []
 hpage_navlist = ["Weapons"]
 weapontable_navlist = ["Simple Weapons"]
@@ -77,7 +75,8 @@ print(counter)
 
 jsconvert = json.dumps(headersdict, indent = 1)
 
-file.write(jsconvert)
+with open("savefile.json", "w") as file:
+    file.write(jsconvert)
 
 
 
