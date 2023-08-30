@@ -30,7 +30,8 @@ links = []
 hpage_navlist = ["Weapons"]
 weapontable_navlist = ["Simple Weapons"]
 
-num_requests = 0#request tracker
+num_requests = 0 #request tracker
+request_delay = 1 #higher number slows scraping process, increases time between requests to reduce server load. 1 or more should be safe. Not recommended to go <1 second/request
 
 ###############################################################################
 
@@ -86,6 +87,7 @@ def navigate_site_level(orig_url, page_navlist, final, *anchors):
     #get the soup text (html) for the current page. This creates a request.
     orig_page = requests.get(orig_url) 
     soup = BSoup(orig_page.text, "lxml")
+    time.sleep(request_delay)#shuold time.sleep for at least one second every time a request is made, to keep server loads safe.
     num_requests += 1
     
     # searches soup for all 'a' tags(usually contain hyperlinks). This returns a list of BSoup.tag objects.
@@ -107,13 +109,14 @@ def navigate_site_level(orig_url, page_navlist, final, *anchors):
         if final:
             new_page = requests.get(f"{orig_url}{anchors[i[0]]['href']}")
             new_pages.append(new_page)
+            time.sleep(request_delay)
             num_requests += 1
         new_urls.append(f"{orig_url}{anchors[i[0]]['href']}")
     
     time.sleep(0.5)
     print("...")
         
-    #pause to reduce request load
+    #pause to help reduce request load(not totally necessary, but adds a few seconds just to be safe)
     print("....")
     time.sleep(5)
         
@@ -124,18 +127,21 @@ def navigate_site_level(orig_url, page_navlist, final, *anchors):
         print(f"new urls obtained: {new_urls}")
         return new_urls
 
-def scrape_url(nav_page, *data_format, number_of_headers):
+def scrape_tables(web_page, number_of_columns, *data_format):
     '''
     
     Parameters
     ----------
     nav_page : TYPE
         DESCRIPTION.
-    *data_org : TYPE
-        DESCRIPTION.
-    number_of_headers : TYPE
+    *data_format :
+        Type: Str
+        Desc: "table", "p"...
+    *number_of_headers : TYPE
         DESCRIPTION.
 
+    -eventually expand this to handle different data formats by using the relevant arguments?
+    
     Returns
     -------
     data_dict : TYPE
@@ -143,6 +149,7 @@ def scrape_url(nav_page, *data_format, number_of_headers):
 
     '''
     global num_requests
+    global request_delay
     
     data_list = []
     data_dict = {}
@@ -150,32 +157,42 @@ def scrape_url(nav_page, *data_format, number_of_headers):
     if not data_format:
         data_format = "table"
     
-    if not number_of_headers:
-        number_of_headers = 5
+    if not number_of_columns:
+        number_of_columns = 5
         
-    nav_soup = BSoup(nav_page.text, "lxml")
-    print(f"URL Return: \n {nav_soup}")
+    soup = BSoup(web_page.text, "lxml")
+    #print(f"URL Return: \n {soup}")
     
-    page_tables = nav_soup.find_all("table")
-
-    for table in page_tables:
+    '''
+    working finding a way to seaparate out table returns by their respective headers ("simple weapons", "martial weapons", etc and return a specific table for each one)
+    headers = soup.find_all("h1")
+    
+    for h in headers:
+        print(f"########################################################## \n {h.text} \n")
+        c = h.next_sibling.next_sibling.contents
+        for i in c:
+            print(i.text)
+    '''
+    
+    tables = soup.find_all("table")
+    
+    for table in tables:
         cell = table.find_all("td")
         for data in cell:
             data_list.append(data.string)
-
-    listpack = []
+    
     counter = 0
-    for i in range(number_of_headers-1,len(data_list), number_of_headers):
+    for i in range(number_of_columns,len(data_list), number_of_columns):
         
-        number_iter = number_of_headers
-        for j in range(number_of_headers):
-            listpack.append([number_iter+1])
-            number_iter -= 1
-            
+        number_iter = i-number_of_columns
+        listpack = []
+        for j in range(number_of_columns):
+            listpack.append(data_list[number_iter+j])
+                  
         data_dict[f"{counter+1}"] = listpack
         counter += 1
        
-        return data_dict
+    return data_dict
 
 def create_json(python_dict, file_to_write):
     '''
@@ -248,7 +265,14 @@ with open("savefile.json", "w") as file:
     file.write(jsconvert)
 '''
 
-new_urls = navigate_site_level(homepage_url, hpage_navlist, final = True)
+#new_pages = navigate_site_level(homepage_url, hpage_navlist, final = True)
+#print(new_pages)
+page = requests.get("http://dnd5e.wikidot.com/weapons") 
+num_requests += 1
+data = scrape_tables(page,number_of_columns = 5)
+
+file_data = json.dumps(data, indent = 1)
+print(file_data) 
 
 
 print(f"Finished. requests made: {num_requests}")
