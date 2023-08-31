@@ -1,0 +1,25 @@
+{
+ "__id": 2,
+ "Ammunition": {
+  "1": [
+   "Arrows (20)",
+   "1 gp",
+   "1\u00a0lb."
+  ],
+  "2": [
+   "Blowgun needles (50)",
+   "1 gp",
+   "1\u00a0lb."
+  ],
+  "3": [
+   "Crossbow bolts (20)",
+   "1 gp",
+   "1\u00bd lb."
+  ],
+  "4": [
+   "Sling bullets (20)",
+   "4 cp",
+   "1\u00bd lb."
+  ]
+ }
+}

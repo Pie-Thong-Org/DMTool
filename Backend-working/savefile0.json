@@ -1,0 +1,103 @@
+{
+ "__id": 0,
+ "Simple Weapons": {
+  "1": [
+   "Club",
+   "1 sp",
+   "1d4 bludgeoning",
+   "2\u00a0lb.",
+   "Light"
+  ],
+  "2": [
+   "Dagger",
+   "2 gp",
+   "1d4 piercing",
+   "1\u00a0lb.",
+   "Finesse, light, thrown (20/60)"
+  ],
+  "3": [
+   "Greatclub",
+   "2 sp",
+   "1d8 bludgeoning",
+   "10\u00a0lb.",
+   "Two-handed"
+  ],
+  "4": [
+   "Handaxe",
+   "5 gp",
+   "1d6 slashing",
+   "2\u00a0lb.",
+   "Light, thrown (20/60)"
+  ],
+  "5": [
+   "Javelin",
+   "5 sp",
+   "1d6 piercing",
+   "2\u00a0lb.",
+   "Thrown (30/120)"
+  ],
+  "6": [
+   "Light hammer",
+   "2 gp",
+   "1d4 bludgeoning",
+   "2\u00a0lb.",
+   "Light, thrown (20/60)"
+  ],
+  "7": [
+   "Mace",
+   "5 gp",
+   "1d6 bludgeoning",
+   "4\u00a0lb.",
+   "\u2014"
+  ],
+  "8": [
+   "Quarterstaff",
+   "2 sp",
+   "1d6 bludgeoning",
+   "4\u00a0lb.",
+   "Versatile (1d8)"
+  ],
+  "9": [
+   "Sickle",
+   "1 gp",
+   "1d4 slashing",
+   "2\u00a0lb.",
+   "Light"
+  ],
+  "10": [
+   "Spear",
+   "1 gp",
+   "1d6 piercing",
+   "3\u00a0lb.",
+   "Thrown (20/60), versatile (1d8)"
+  ],
+  "11": [
+   "Crossbow, light",
+   "25 gp",
+   "1d8 piercing",
+   "5\u00a0lb.",
+   "Ammunition, range (80/320), loading, two-handed"
+  ],
+  "12": [
+   "Dart",
+   "5 cp",
+   "1d4 piercing",
+   "1/4\u00a0lb.",
+   "Finesse, thrown (20/60)"
+  ],
+  "13": [
+   "Shortbow",
+   "25 gp",
+   "1d6 piercing",
+   "2\u00a0lb.",
+   "Ammunition, range (80/320), two-handed"
+  ],
+  "14": [
+   "Sling",
+   "1 sp",
+   "1d4 piercing",
+   "\u2014",
+   "Ammunition, range (30/120)"
+  ]
+ }
+}

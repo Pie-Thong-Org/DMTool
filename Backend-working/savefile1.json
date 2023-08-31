@@ -1,0 +1,166 @@
+{
+ "__id": 1,
+ "Martial Weapons": {
+  "1": [
+   "Battleaxe",
+   "10 gp",
+   "1d8 slashing",
+   "4\u00a0lb.",
+   "Versatile (1d10)"
+  ],
+  "2": [
+   "Flail",
+   "10 gp",
+   "1d8 bludgeoning",
+   "2\u00a0lb.",
+   "\u2014"
+  ],
+  "3": [
+   "Glaive",
+   "20 gp",
+   "1d10 slashing",
+   "6\u00a0lb.",
+   "Heavy, reach, two-handed"
+  ],
+  "4": [
+   "Greataxe",
+   "30 gp",
+   "1d12 slashing",
+   "7\u00a0lb.",
+   "Heavy, two-handed"
+  ],
+  "5": [
+   "Greatsword",
+   "50 gp",
+   "2d6 slashing",
+   "6\u00a0lb.",
+   "Heavy, two-handed"
+  ],
+  "6": [
+   "Halberd",
+   "20 gp",
+   "1d10 slashing",
+   "6\u00a0lb.",
+   "Heavy, reach, two-handed"
+  ],
+  "7": [
+   "Lance",
+   "10 gp",
+   "1d12 piercing",
+   "6\u00a0lb.",
+   "Reach, special"
+  ],
+  "8": [
+   "Longsword",
+   "15 gp",
+   "1d8 slashing",
+   "3\u00a0lb.",
+   "Versatile (1d10)"
+  ],
+  "9": [
+   "Maul",
+   "10 gp",
+   "2d6 bludgeoning",
+   "10\u00a0lb.",
+   "Heavy, two-handed"
+  ],
+  "10": [
+   "Morningstar",
+   "15 gp",
+   "1d8 piercing",
+   "4\u00a0lb.",
+   "\u2014"
+  ],
+  "11": [
+   "Pike",
+   "5 gp",
+   "1d10 piercing",
+   "18\u00a0lb.",
+   "Heavy, reach, two-handed"
+  ],
+  "12": [
+   "Rapier",
+   "25 gp",
+   "1d8 piercing",
+   "2\u00a0lb.",
+   "Finesse"
+  ],
+  "13": [
+   "Scimitar",
+   "25 gp",
+   "1d6 slashing",
+   "3\u00a0lb.",
+   "Finesse, light"
+  ],
+  "14": [
+   "Shortsword",
+   "10 gp",
+   "1d6 piercing",
+   "2\u00a0lb.",
+   "Finesse, light"
+  ],
+  "15": [
+   "Trident",
+   "5 gp",
+   "1d6 piercing",
+   "4\u00a0lb.",
+   "Thrown (20/60), versatile (1d8)"
+  ],
+  "16": [
+   "War pick",
+   "5 gp",
+   "1d8 piercing",
+   "2\u00a0lb.",
+   "\u2014"
+  ],
+  "17": [
+   "Warhammer",
+   "15 gp",
+   "1d8 bludgeoning",
+   "2\u00a0lb.",
+   "Versatile (1d10)"
+  ],
+  "18": [
+   "Whip",
+   "2 gp",
+   "1d4 slashing",
+   "3\u00a0lb.",
+   "Finesse, reach"
+  ],
+  "19": [
+   "Blowgun",
+   "10 gp",
+   "1 piercing",
+   "1\u00a0lb.",
+   "Ammunition, range (25/100), loading"
+  ],
+  "20": [
+   "Crossbow, hand",
+   "75 gp",
+   "1d6 piercing",
+   "3\u00a0lb.",
+   "Ammunition, range (30/120), light, loading"
+  ],
+  "21": [
+   "Crossbow, heavy",
+   "50 gp",
+   "1d10 piercing",
+   "18\u00a0lb.",
+   "Ammunition, range (100/400), heavy, loading, two-handed"
+  ],
+  "22": [
+   "Longbow",
+   "50 gp",
+   "1d8 piercing",
+   "2\u00a0lb.",
+   "Ammunition, range (150/600), heavy, two-Handed"
+  ],
+  "23": [
+   "Net",
+   "1 gp",
+   "\u2014",
+   "3\u00a0lb.",
+   "Special, thrown (5/15)"
+  ]
+ }
+}
