@@ -1,2 +1,2 @@
 needs specific functions:
-    - weapons page, "Setting Specific Weapons" table
+    - weapons page, "Setting Specific Weapons" table not getting grabbed in standard scraper algo
