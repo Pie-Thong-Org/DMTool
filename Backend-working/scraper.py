@@ -28,11 +28,14 @@ homepage_url = "http://dnd5e.wikidot.com"
 links = []
 
 hpage_navlist = ["Weapons"]
-weapontable_navlist = ["Simple Weapons"]
+weapons_header_flags = ["Simple Weapons"]
 
 num_requests = 0 #request tracker
 request_delay = 1 #higher number slows scraping process, increases time between requests to reduce server load. 1 or more should be safe. Not recommended to go <1 second/request
 
+#page = requests.get(f"{homepage_url}/weapons")
+#soup = BSoup(page.text, "lxml")
+#print(soup.table)
 ###############################################################################
 
 #classes
@@ -127,18 +130,21 @@ def navigate_site_level(orig_url, page_navlist, final, *anchors):
         print(f"new urls obtained: {new_urls}")
         return new_urls
 
-def scrape_tables(web_page, number_of_columns, *data_format):
+def scrape_tables(web_page, header_flags, number_of_columns, *data_format):
     '''
     
     Parameters
     ----------
     nav_page : TYPE
         DESCRIPTION.
+    header_flags:
+        Type: List of Str's
+        Desc: 
+    number_of_columns : TYPE
+        DESCRIPTION.
     *data_format :
         Type: Str
         Desc: "table", "p"...
-    *number_of_headers : TYPE
-        DESCRIPTION.
 
     -eventually expand this to handle different data formats by using the relevant arguments?
     
@@ -163,16 +169,17 @@ def scrape_tables(web_page, number_of_columns, *data_format):
     soup = BSoup(web_page.text, "lxml")
     #print(f"URL Return: \n {soup}")
     
-    '''
-    working finding a way to seaparate out table returns by their respective headers ("simple weapons", "martial weapons", etc and return a specific table for each one)
+    
+    #working finding a way to separate out table returns by their respective headers ("simple weapons", "martial weapons", etc and return a specific table for each one)
     headers = soup.find_all("h1")
     
     for h in headers:
-        print(f"########################################################## \n {h.text} \n")
-        c = h.next_sibling.next_sibling.contents
-        for i in c:
-            print(i.text)
-    '''
+        if h.text in header_flags:
+            print(f"########################################################## \n {h.text} \n")
+            c = h.next_sibling.next_sibling.contents #find a way to be more adaptive to the web page? Currently this navigation works for the weapons table on dndwiki due to the layout, though unknown if it will work elsewhere.
+            for i in c:
+                print(i.text)
+    
     
     tables = soup.find_all("table")
     
@@ -269,10 +276,10 @@ with open("savefile.json", "w") as file:
 #print(new_pages)
 page = requests.get("http://dnd5e.wikidot.com/weapons") 
 num_requests += 1
-data = scrape_tables(page,number_of_columns = 5)
+data = scrape_tables(page,header_flags = weapons_header_flags,number_of_columns = 5)
 
 file_data = json.dumps(data, indent = 1)
-print(file_data) 
+#print(file_data) 
 
 
 print(f"Finished. requests made: {num_requests}")
