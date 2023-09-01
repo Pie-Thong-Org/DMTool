@@ -1,2 +1,13 @@
-needs specific functions:
-    - weapons page, "Setting Specific Weapons" table not getting grabbed in standard scraper algo
+needs specific function:
+    Items
+    - Weapons page:
+	 -"Setting Specific Weapons" table not getting grabbed in standard scraper algo
+    - Adventuring gear page:
+	 - Tables not populating at all:
+		"Equipment Packs", "Arcane Focus", "Druidic Focus", "Holy Symbols"
+		 Headers followed by a description paragraph, before the actual table, do not get populated.
+	 - Table partial contents not populating:
+		 "Common Items":"Block and Tackle", "Book", etc. All items with an extra info blurb 
+				included return a "null" value for their name. "Rope" returns null 
+				values for everything for some reason.
+		 "Usable Items": Same null return  issue
