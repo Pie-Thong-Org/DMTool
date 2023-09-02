@@ -215,7 +215,7 @@ def scrape_tables(web_page, header_flags, extra_header_flags, secondary_filters,
                 
                 for j in i:
                     if type(j) == bs4.element.Tag: #skips over siblings that are empty spaces so that columsn can be counted correctly
-                        if j.string not in secondary_filters: #skips over any string specified in the secondary_filters list. This should be used for secondary headers that aren't part of the actua l data.
+                        if j.string not in secondary_filters and j.string[0] not "*": #skips over any string specified in the secondary_filters list. This should be used for secondary headers that aren't part of the actua l data.
                             data_list.append(j.string)
                             column_counter += 1
                            
