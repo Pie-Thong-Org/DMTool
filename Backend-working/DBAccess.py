@@ -10,10 +10,10 @@ import certifi
 import json
  
 
-user = "t-btay"
-passw = "jgAXBgHB6RNcGCP5"
+user = "t-btay" #replace user and password with authorized user for desired DB
+passw = "jgAXBgHB6RNcGCP5"##
 ca = certifi.where()
-connection_string = f"mongodb+srv://{user}:{passw}@cluster0?ssl=true&ssl_cert_reqs=CERT_NONE.mfbl8ws.mongodb.net/?retryWrites=true&w=majority"
+connection_string = f"mongodb+srv://{user}:{passw}@cluster0?ssl=true&ssl_cert_reqs=CERT_NONE.mfbl8ws.mongodb.net/?retryWrites=true&w=majority"#replace this with appropriate connectio nstring from new DB
 
 data_str = ""
 
