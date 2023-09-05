@@ -1,0 +1,30 @@
+{
+ "_id": 3,
+ "Clothes": {
+  "1": [
+   "Common Clothes",
+   "5 sp",
+   "3\u00a0lb."
+  ],
+  "2": [
+   "Costume",
+   "5 gp",
+   "4\u00a0lb."
+  ],
+  "3": [
+   "Fine Clothes",
+   "15 gp",
+   "6\u00a0lb."
+  ],
+  "4": [
+   "Robes",
+   "1 gp",
+   "4\u00a0lb."
+  ],
+  "5": [
+   "Traveler's Clothes",
+   "2 gp",
+   "4\u00a0lb."
+  ]
+ }
+}

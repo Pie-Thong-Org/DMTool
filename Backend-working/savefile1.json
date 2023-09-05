@@ -1,0 +1,195 @@
+{
+ "_id": 1,
+ "Common Items": {
+  "1": [
+   "Abacus",
+   "2 gp",
+   "2\u00a0lb."
+  ],
+  "2": [
+   "Bedroll",
+   "1 gp",
+   "2\u00a0lb."
+  ],
+  "3": [
+   "Bell",
+   "1 gp",
+   "-"
+  ],
+  "4": [
+   "Blanket",
+   "5 sp",
+   "5\u00a0lb."
+  ],
+  "5": [
+   null,
+   "1 gp",
+   "5\u00a0lb."
+  ],
+  "6": [
+   null,
+   "25 gp",
+   "5\u00a0lb."
+  ],
+  "7": [
+   null,
+   "1 cp",
+   "-"
+  ],
+  "8": [
+   null,
+   "5 gp",
+   "10\u00a0lb."
+  ],
+  "9": [
+   "Chalk (1 pc)",
+   "1 cp",
+   "-"
+  ],
+  "10": [
+   null,
+   "25 gp",
+   "2\u00a0lb."
+  ],
+  "11": [
+   null,
+   "1 gp",
+   "4\u00a0lb."
+  ],
+  "12": [
+   "Grappling Hook",
+   "2 gp",
+   "4\u00a0lb."
+  ],
+  "13": [
+   "Hammer",
+   "1 gp",
+   "3\u00a0lb."
+  ],
+  "14": [
+   "Hourglass",
+   "25 gp",
+   "1\u00a0lb."
+  ],
+  "15": [
+   "Ink (1 oz)",
+   "10 gp",
+   "-"
+  ],
+  "16": [
+   "Ink Pen",
+   "2 cp",
+   "-"
+  ],
+  "17": [
+   "Ladder (10 ft)",
+   "1 sp",
+   "25\u00a0lb."
+  ],
+  "18": [
+   null,
+   "10 gp",
+   "1\u00a0lb."
+  ],
+  "19": [
+   null,
+   "100 gp",
+   "-"
+  ],
+  "20": [
+   null,
+   "2 sp",
+   "1\u00a0lb."
+  ],
+  "21": [
+   "Miner's Pick",
+   "2 gp",
+   "10\u00a0lb."
+  ],
+  "22": [
+   "Paper (1 pc)",
+   "2 sp",
+   "-"
+  ],
+  "23": [
+   "Parchment (1 sheet)",
+   "1 sp",
+   "-"
+  ],
+  "24": [
+   "Perfume (vial)",
+   "5 gp",
+   "-"
+  ],
+  "25": [
+   "Piton",
+   "5 cp",
+   "0.25\u00a0lb."
+  ],
+  "26": [
+   "Pole (10 ft)",
+   "5 cp",
+   "7\u00a0lb."
+  ],
+  "27": [
+   null,
+   "5 sp",
+   "2\u00a0lb."
+  ],
+  "28": [
+   null,
+   null,
+   null
+  ],
+  "29": [
+   "Sealing Wax",
+   "5 sp",
+   "-"
+  ],
+  "30": [
+   "Shovel",
+   "2 gp",
+   "5\u00a0lb."
+  ],
+  "31": [
+   "Signal Whistle",
+   "5 cp",
+   "-"
+  ],
+  "32": [
+   "Signet Ring",
+   "5 gp",
+   "-"
+  ],
+  "33": [
+   "Sledgehammer",
+   "2 gp",
+   "10\u00a0lb."
+  ],
+  "34": [
+   null,
+   "50 gp",
+   "3\u00a0lb."
+  ],
+  "35": [
+   "Spikes - Iron (10)",
+   "1 gp",
+   "5\u00a0lb."
+  ],
+  "36": [
+   null,
+   "1000 gp",
+   "1\u00a0lb."
+  ],
+  "37": [
+   "Tent - 2 person",
+   "2 gp",
+   "20 lbs."
+  ],
+  "38": [
+   "Whetstone",
+   "1 cp",
+   "1\u00a0lb."
+  ]
+ }
+}
