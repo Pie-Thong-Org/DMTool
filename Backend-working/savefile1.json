@@ -1,195 +1,166 @@
 {
- "_id": 1,
- "Common Items": {
+ "__id": 1,
+ "Martial Weapons": {
   "1": [
-   "Abacus",
-   "2 gp",
-   "2\u00a0lb."
+   "Battleaxe",
+   "10 gp",
+   "1d8 slashing",
+   "4\u00a0lb.",
+   "Versatile (1d10)"
   ],
   "2": [
-   "Bedroll",
-   "1 gp",
-   "2\u00a0lb."
+   "Flail",
+   "10 gp",
+   "1d8 bludgeoning",
+   "2\u00a0lb.",
+   "\u2014"
   ],
   "3": [
-   "Bell",
-   "1 gp",
-   "-"
+   "Glaive",
+   "20 gp",
+   "1d10 slashing",
+   "6\u00a0lb.",
+   "Heavy, reach, two-handed"
   ],
   "4": [
-   "Blanket",
-   "5 sp",
-   "5\u00a0lb."
+   "Greataxe",
+   "30 gp",
+   "1d12 slashing",
+   "7\u00a0lb.",
+   "Heavy, two-handed"
   ],
   "5": [
-   null,
-   "1 gp",
-   "5\u00a0lb."
+   "Greatsword",
+   "50 gp",
+   "2d6 slashing",
+   "6\u00a0lb.",
+   "Heavy, two-handed"
   ],
   "6": [
-   null,
-   "25 gp",
-   "5\u00a0lb."
+   "Halberd",
+   "20 gp",
+   "1d10 slashing",
+   "6\u00a0lb.",
+   "Heavy, reach, two-handed"
   ],
   "7": [
-   null,
-   "1 cp",
-   "-"
+   "Lance",
+   "10 gp",
+   "1d12 piercing",
+   "6\u00a0lb.",
+   "Reach, special"
   ],
   "8": [
-   null,
-   "5 gp",
-   "10\u00a0lb."
+   "Longsword",
+   "15 gp",
+   "1d8 slashing",
+   "3\u00a0lb.",
+   "Versatile (1d10)"
   ],
   "9": [
-   "Chalk (1 pc)",
-   "1 cp",
-   "-"
+   "Maul",
+   "10 gp",
+   "2d6 bludgeoning",
+   "10\u00a0lb.",
+   "Heavy, two-handed"
   ],
   "10": [
-   null,
-   "25 gp",
-   "2\u00a0lb."
+   "Morningstar",
+   "15 gp",
+   "1d8 piercing",
+   "4\u00a0lb.",
+   "\u2014"
   ],
   "11": [
-   null,
-   "1 gp",
-   "4\u00a0lb."
+   "Pike",
+   "5 gp",
+   "1d10 piercing",
+   "18\u00a0lb.",
+   "Heavy, reach, two-handed"
   ],
   "12": [
-   "Grappling Hook",
-   "2 gp",
-   "4\u00a0lb."
+   "Rapier",
+   "25 gp",
+   "1d8 piercing",
+   "2\u00a0lb.",
+   "Finesse"
   ],
   "13": [
-   "Hammer",
-   "1 gp",
-   "3\u00a0lb."
+   "Scimitar",
+   "25 gp",
+   "1d6 slashing",
+   "3\u00a0lb.",
+   "Finesse, light"
   ],
   "14": [
-   "Hourglass",
-   "25 gp",
-   "1\u00a0lb."
+   "Shortsword",
+   "10 gp",
+   "1d6 piercing",
+   "2\u00a0lb.",
+   "Finesse, light"
   ],
   "15": [
-   "Ink (1 oz)",
-   "10 gp",
-   "-"
+   "Trident",
+   "5 gp",
+   "1d6 piercing",
+   "4\u00a0lb.",
+   "Thrown (20/60), versatile (1d8)"
   ],
   "16": [
-   "Ink Pen",
-   "2 cp",
-   "-"
+   "War pick",
+   "5 gp",
+   "1d8 piercing",
+   "2\u00a0lb.",
+   "\u2014"
   ],
   "17": [
-   "Ladder (10 ft)",
-   "1 sp",
-   "25\u00a0lb."
+   "Warhammer",
+   "15 gp",
+   "1d8 bludgeoning",
+   "2\u00a0lb.",
+   "Versatile (1d10)"
   ],
   "18": [
-   null,
-   "10 gp",
-   "1\u00a0lb."
+   "Whip",
+   "2 gp",
+   "1d4 slashing",
+   "3\u00a0lb.",
+   "Finesse, reach"
   ],
   "19": [
-   null,
-   "100 gp",
-   "-"
+   "Blowgun",
+   "10 gp",
+   "1 piercing",
+   "1\u00a0lb.",
+   "Ammunition, range (25/100), loading"
   ],
   "20": [
-   null,
-   "2 sp",
-   "1\u00a0lb."
+   "Crossbow, hand",
+   "75 gp",
+   "1d6 piercing",
+   "3\u00a0lb.",
+   "Ammunition, range (30/120), light, loading"
   ],
   "21": [
-   "Miner's Pick",
-   "2 gp",
-   "10\u00a0lb."
+   "Crossbow, heavy",
+   "50 gp",
+   "1d10 piercing",
+   "18\u00a0lb.",
+   "Ammunition, range (100/400), heavy, loading, two-handed"
   ],
   "22": [
-   "Paper (1 pc)",
-   "2 sp",
-   "-"
+   "Longbow",
+   "50 gp",
+   "1d8 piercing",
+   "2\u00a0lb.",
+   "Ammunition, range (150/600), heavy, two-Handed"
   ],
   "23": [
-   "Parchment (1 sheet)",
-   "1 sp",
-   "-"
-  ],
-  "24": [
-   "Perfume (vial)",
-   "5 gp",
-   "-"
-  ],
-  "25": [
-   "Piton",
-   "5 cp",
-   "0.25\u00a0lb."
-  ],
-  "26": [
-   "Pole (10 ft)",
-   "5 cp",
-   "7\u00a0lb."
-  ],
-  "27": [
-   null,
-   "5 sp",
-   "2\u00a0lb."
-  ],
-  "28": [
-   null,
-   null,
-   null
-  ],
-  "29": [
-   "Sealing Wax",
-   "5 sp",
-   "-"
-  ],
-  "30": [
-   "Shovel",
-   "2 gp",
-   "5\u00a0lb."
-  ],
-  "31": [
-   "Signal Whistle",
-   "5 cp",
-   "-"
-  ],
-  "32": [
-   "Signet Ring",
-   "5 gp",
-   "-"
-  ],
-  "33": [
-   "Sledgehammer",
-   "2 gp",
-   "10\u00a0lb."
-  ],
-  "34": [
-   null,
-   "50 gp",
-   "3\u00a0lb."
-  ],
-  "35": [
-   "Spikes - Iron (10)",
+   "Net",
    "1 gp",
-   "5\u00a0lb."
-  ],
-  "36": [
-   null,
-   "1000 gp",
-   "1\u00a0lb."
-  ],
-  "37": [
-   "Tent - 2 person",
-   "2 gp",
-   "20 lbs."
-  ],
-  "38": [
-   "Whetstone",
-   "1 cp",
-   "1\u00a0lb."
+   "\u2014",
+   "3\u00a0lb.",
+   "Special, thrown (5/15)"
   ]
  }
 }

@@ -16,8 +16,6 @@ ca = certifi.where()
 connection_string = f"mongodb+srv://{user}:{passw}@cluster0?ssl=true&ssl_cert_reqs=CERT_NONE.mfbl8ws.mongodb.net/?retryWrites=true&w=majority"
 
 data_str = ""
-file_index = 0
-
 
 
 ###############################################################################
@@ -41,12 +39,12 @@ ping_db_server(cluster)
 database = cluster["TestDB"]
 collection = database["TestColl"]
 
-with open("savefile2.json", "r") as file:
+with open("savefile.json", "r") as file:
     for data_read in file:
         data_str += data_read
     data = json.loads(data_str)
     #collection.delete_many({}) #CAUTION: DELETES ENTIRE DB
-    collection.insert_one(data)
+    #collection.insert_one(data)
 
 
 post_count = collection.count_documents({})

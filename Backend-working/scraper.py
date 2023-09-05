@@ -32,13 +32,10 @@ homepage_url = "http://dnd5e.wikidot.com"
 
 links = []
 
-hpage_navlist = ["Weapons", "Adventuring Gear"]
-
+hpage_navlist = ["Weapons"]
 weaponspage_headers = ["Simple Weapons", "Martial Weapons", "Ammunition", "Setting Specific Weapons"]
+weaponspage_extra_headers = ["Setting Specific Weapons"]
 weaponspage_secondary_filter = ["Name", "Cost","Damage", "Weight","Properties","Simple Melee Weapons","Simple Ranged Weapons", "Martial Melee Weapons", "Martial Ranged Weapons", "Ammunition"]
-
-agearpage_headers = ["Equipment Packs", "Common Items", "Usable Items", "Clothes", "Arcane Focus", "Druidic Focus", "Holy Symbols", "Containers"]
-agearpage_secondary_filter = ["Equipment Pack", "Cost","Weight", "Capacity", "Contents", "Common Item", "Usable Items", "Clothes","Arcane Focus", "Druidic Focus", "Holy Symbols", "Containers"]
 
 id_index = 0
 
@@ -162,7 +159,7 @@ def populate_dictionary(number_of_columns, data_list):
       
     return data_dict
 
-def scrape_tables(web_page, header_flags, secondary_filters, *data_format):
+def scrape_tables(web_page, header_flags, extra_header_flags, secondary_filters, *data_format):
     '''
     
     Parameters
@@ -206,7 +203,6 @@ def scrape_tables(web_page, header_flags, secondary_filters, *data_format):
     #filters tables to scrape by their headers. This will keep it from grabbing extra info from the page that's not wanted.
     headers = soup.find_all("h1")
     
-    num_columns = 0
     column_counter = 0
     counter = 0
     for h in headers:
@@ -219,7 +215,7 @@ def scrape_tables(web_page, header_flags, secondary_filters, *data_format):
                 
                 for j in i:
                     if type(j) == bs4.element.Tag: #skips over siblings that are empty spaces so that columsn can be counted correctly
-                        if j.string not in secondary_filters: #skips over any string specified in the secondary_filters list. This should be used for secondary headers that aren't part of the actua l data.
+                        if j.string not in secondary_filters and j.string[0] not "*": #skips over any string specified in the secondary_filters list. This should be used for secondary headers that aren't part of the actua l data.
                             data_list.append(j.string)
                             column_counter += 1
                            
@@ -231,7 +227,7 @@ def scrape_tables(web_page, header_flags, secondary_filters, *data_format):
                 
             data_dict = populate_dictionary(num_columns, data_list)
             #######temp write to .json file. For testing only. Will be using save_to_json in the future
-            with open(f"savefile{id_index}.json", "w") as file:
+            with open(f"savefile{id_index}.json", "a") as file:
                 data_dict = {"_id": id_index, h.text : data_dict}
                 jsconvert = json.dumps(data_dict, indent = 1)
                 file.write(jsconvert)
@@ -327,15 +323,12 @@ with open("savefile.json", "w") as file:
 
 #new_pages = navigate_site_level(homepage_url, hpage_navlist, final = True)
 #print(new_pages)
-page1 = requests.get("http://dnd5e.wikidot.com/weapons")
-page2 = requests.get("http://dnd5e.wikidot.com/adventuring-gear")
+page = requests.get("http://dnd5e.wikidot.com/weapons") 
 num_requests += 1
-
-data = scrape_tables(page2, header_flags = agearpage_headers, secondary_filters = agearpage_secondary_filter)
-
+data = scrape_tables(page,header_flags = weaponspage_headers, extra_header_flags = weaponspage_extra_headers, secondary_filters = weaponspage_secondary_filter)
 
 file_data = json.dumps(data, indent = 1)
-print(file_data) 
+#print(file_data) 
 
 
 print(f"Finished. requests made: {num_requests}")

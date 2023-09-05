@@ -1,95 +1,25 @@
 {
- "_id": 2,
- "Usable Items": {
+ "__id": 2,
+ "Ammunition": {
   "1": [
-   null,
-   "25 gp",
+   "Arrows (20)",
+   "1 gp",
    "1\u00a0lb."
   ],
   "2": [
-   null,
-   "50 gp",
+   "Blowgun needles (50)",
+   "1 gp",
    "1\u00a0lb."
   ],
   "3": [
-   null,
-   "50 gp",
-   "-"
+   "Crossbow bolts (20)",
+   "1 gp",
+   "1\u00bd lb."
   ],
   "4": [
-   null,
-   "1 gp",
-   "2\u00a0lb."
-  ],
-  "5": [
-   null,
-   "1 gp",
-   "2\u00a0lb."
-  ],
-  "6": [
-   null,
-   "25 gp",
-   "12\u00a0lb."
-  ],
-  "7": [
-   null,
-   "2 gp",
-   "5\u00a0lb."
-  ],
-  "8": [
-   null,
-   "5 gp",
-   "3\u00a0lb."
-  ],
-  "9": [
-   null,
-   "25 gp",
-   "1\u00a0lb."
-  ],
-  "10": [
-   null,
-   "5 gp",
-   "25\u00a0lb."
-  ],
-  "11": [
-   null,
-   "5 sp",
-   "1\u00a0lb."
-  ],
-  "12": [
-   null,
-   "10 gp",
-   "2\u00a0lb."
-  ],
-  "13": [
-   null,
-   "5 gp",
-   "2\u00a0lb."
-  ],
-  "14": [
-   null,
-   "1 sp",
-   "1\u00a0lb."
-  ],
-  "15": [
-   null,
-   "100 gp",
-   "-"
-  ],
-  "16": [
-   "Potion of Healing (common)",
-   "50 gp",
-   "0.5\u00a0lb."
-  ],
-  "17": [
-   null,
-   "5 sp",
-   "1\u00a0lb."
-  ],
-  "18": [
-   null,
-   "1 cp",
-   "1\u00a0lb."
+   "Sling bullets (20)",
+   "4 cp",
+   "1\u00bd lb."
   ]
  }
 }
